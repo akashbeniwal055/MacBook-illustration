@@ -1,0 +1,17 @@
+import Image from "next/image";
+import Macbook from "./Components/macbook"
+
+export default function() {
+  return (
+    
+<div className="h-screen w-screen bg-white flex items-center jusitify-center">
+  <Macbook />
+</div>
+
+
+
+
+
+  
+ )
+}
