@@ -1,4 +1,4 @@
-import Image from "next/image";
+
 import Macbook from "./Components/macbook"
 
 export default function() {
