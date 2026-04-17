@@ -7,7 +7,7 @@ export const Iphone = () => {
         <motion.div
             whileHover="animate"
             initial="initial"
-            className=" max-w-2xl w-full h-96 flex items-center  bg-neutral-50 mx-auto ">
+            className=" max-w-2xl w-full h-full flex items-center  bg-neutral-50 mx-auto ">
             <div className="w-60 mx-auto  ">
                 {/* iphone body */}
                 <div className="relative w-24 h-42 rounded-3xl bg-neutral-200 mx-auto p-1 ">
@@ -20,12 +20,12 @@ export const Iphone = () => {
                         <motion.div 
                         variants={{
                             initial:{
-                                opacity:0,
-                                filter:"blur(30px)"
+                                opacity:0
+                                
                             },
                             animate:{
-                                opacity:1,
-                                filter:"blur(0px)"
+                                opacity:1
+                                
                             }
                         }}
 
@@ -40,7 +40,7 @@ export const Iphone = () => {
 
                             initial: {
                                 opacity: 0,
-                                filter: "blur(20px)"
+                                filter: "blur(10px)"
                             }, animate: {
                                 opacity: 1,
                                 filter: "blur(0px)"

@@ -7,7 +7,7 @@ export default function Macbook() {
     <motion.div
       whileHover="animate"
       initial="initial"
-      className="max-w-2xl w-full mx-auto flex items-center h-96 bg-neutral-50"
+      className=" w-full mx-auto flex items-center h-full bg-neutral-50"
     >
 
       <div
