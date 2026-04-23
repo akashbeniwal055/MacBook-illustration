@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+
 
 import { motion } from "framer-motion";
 export default function Macbook() {
@@ -7,7 +7,7 @@ export default function Macbook() {
     <motion.div
       whileHover="animate"
       initial="initial"
-      className=" w-full mx-auto flex items-center h-full bg-neutral-50"
+      className=" w-full mx-auto flex items-center h-full bg-neutral-50 dark:bg-neutral-800 "
     >
 
       <div
@@ -23,7 +23,7 @@ export default function Macbook() {
             },
             initial: {
               rotateX: "-50deg",
-            },
+            }
           }}
           transition={{
             ease: [0.42, 0, 0.58, 1],
@@ -59,8 +59,8 @@ export default function Macbook() {
         </motion.div>
 
         {/* back */}
-        <div className=" relative w-full mx-auto h-4 rounded-bl-2xl rounded-br-2xl rounded-tl-sm rounded-tr-sm  bg-linear-to-t from-neutral-300 to-neutral-100 shadow-[0px_1px_0px_0px_var(--color-neutral-300)_inset] ">
-          <div className="absolute top-0 w-10 h-2 inset-0 mx-auto bg-neutral-300 rounded-bl-md rounded-br-md shadow-[0px_-1px_0px_0px_var(--color-neutral-100)_inset,1px_0px_5px_0px_var(--color-neutral-500)_inset] "></div>
+        <div className=" relative w-full mx-auto h-4 rounded-bl-2xl rounded-br-2xl rounded-tl-sm rounded-tr-sm  bg-linear-to-t from-neutral-300 to-neutral-100 shadow-[0px_1px_0px_0px_var(--color-neutral-300)_inset]  dark:bg-linear-to-t dark:from-neutral-700 dark:to-neutral-500 dark:shadow-[0px_1px_0px_0px_var(--color-neutral-600)_inset]">
+          <div className="absolute top-0 w-10 h-2 inset-0 mx-auto bg-neutral-300 rounded-bl-md rounded-br-md shadow-[0px_-1px_0px_0px_var(--color-neutral-100)_inset,1px_0px_5px_0px_var(--color-neutral-500)_inset] dark:bg-neutral-400 dark:shadow-[0px_-1px_0px_0px_var(--color-neutral-200)_inset,1px_0px_5px_0px_var(--color-neutral-600)_inset]"></div>
         </div>
 
       </div>

@@ -6,12 +6,12 @@ import { Ipad } from "./Components/ipad"
 export default function () {
   return (
 
-    <div className="h-screen w-screen bg-white flex flex-col items-center jusitify-center">
+    <div className="h-screen w-screen bg-white flex flex-col items-center jusitify-center dark:bg-neutral-900">
 
       <div className="flex flex-col gap-4 text-center mb-10 ">
 
-        <h2 className="text-4xl font-bold text-neutral-800">Bento grid </h2>
-        <p className=" text-lg font-mono text-neutral-400"> A bento grid layout featuring custom illustration-based animations. </p>
+        <h2 className="text-5xl font-bold text-neutral-800 dark:text-neutral-100">Bento grid </h2>
+        <p className=" text-md font-mono text-neutral-400 dark:text-neutral-400"> A bento grid layout featuring custom<br></br> illustration-based animations. </p>
       </div>
       <Bento >
 
@@ -54,7 +54,7 @@ const Bento = ({ className, children }: { className?: string, children?: React.R
 }
 const BentoSkeleton = ({ className, children }: { className?: string, children?: React.ReactNode }) => {
   return (
-    <div className={` border border-neutral-200 overflow-hidden ${className}`}>
+    <div className={` border border-neutral-200 dark:border-neutral-600 overflow-hidden ${className}`}>
       {children}
     </div>
   )
